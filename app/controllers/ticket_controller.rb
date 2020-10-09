@@ -31,6 +31,12 @@ class TicketController < ApplicationController
     head :no_content
   end
 
+  # Gets all the tickets by project ID
+  def ticket_by_team
+    @ticket = Ticket.where(project_id: params[:project_id])
+    json_response(@ticket)
+  end
+
 
   private
 

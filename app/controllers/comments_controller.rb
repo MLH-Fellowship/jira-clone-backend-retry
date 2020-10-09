@@ -31,6 +31,11 @@ class CommentsController < ApplicationController
     head :no_content
   end
 
+  def comments_by_ticket_id
+    @comment = Comment.where(ticket_id: params[:ticket_id])
+    json_response(@comment)
+  end
+
 
   private
 
