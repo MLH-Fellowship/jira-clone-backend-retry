@@ -3,4 +3,8 @@ Rails.application.routes.draw do
 
   resources :users
   resources :comments
+  resources :projects
+  resources :status
+  resources :teams
+  resources :ticket
 end
