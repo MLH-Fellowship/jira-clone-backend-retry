@@ -10,7 +10,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_09_144659) do
+ActiveRecord::Schema.define(version: 2020_10_09_145539) do
+
+  create_table "comments", force: :cascade do |t|
+    t.text "content"
+    t.integer "user_id"
+    t.integer "project_id"
+    t.integer "ticket_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.string "title"
+    t.text "content"
+    t.date "date_published"
+    t.date "date_due"
+    t.integer "teams_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "statuses", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "teams", force: :cascade do |t|
     t.string "name"
