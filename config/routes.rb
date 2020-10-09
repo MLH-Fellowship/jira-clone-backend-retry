@@ -7,4 +7,8 @@ Rails.application.routes.draw do
   resources :status
   resources :teams
   resources :ticket
+
+  get '/tickets/:project_id' => 'ticket#ticket_by_team'
+  get '/commentsByTicketId/:ticket_id' => 'comments#comments_by_ticket_id'
+
 end
