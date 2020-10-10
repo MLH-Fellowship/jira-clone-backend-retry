@@ -42,7 +42,7 @@ class TicketController < ApplicationController
 
   # Used to allow mass assignment
   def ticket_params
-    params.permit(:project_id, :status_id, :title, :description, :date_posted, :due_date)
+    params.permit(:project_id, :status_id, :title, :description, :date_posted, :due_date, :user_id)
   end
 
   def set_ticket
