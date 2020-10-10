@@ -36,10 +36,10 @@ Project.create(title: 'This is a random title for another project', content: con
 
 
 # Default Tickets
-Ticket.create(project_id: 1, status_id: 1, title: 'Ticket One', description: content, date_posted: Time.now)
-Ticket.create(project_id: 1, status_id: 1, title: 'Ticket Two', description: content, date_posted: Time.now)
-Ticket.create(project_id: 2, status_id: 1, title: 'Ticket One', description: content, date_posted: Time.now)
-Ticket.create(project_id: 2, status_id: 1, title: 'Ticket Two', description: content, date_posted: Time.now)
+Ticket.create(project_id: 1, status_id: 1, title: 'Ticket One', description: content, date_posted: Time.now, user_id: 4)
+Ticket.create(project_id: 1, status_id: 1, title: 'Ticket Two', description: content, date_posted: Time.now, user_id: 4)
+Ticket.create(project_id: 2, status_id: 1, title: 'Ticket One', description: content, date_posted: Time.now, user_id: 5)
+Ticket.create(project_id: 2, status_id: 1, title: 'Ticket Two', description: content, date_posted: Time.now, user_id: 5)
 
 # Default comments
 Comment.create(content: content, user_id: 1, project_id: 2, ticket_id: 1)
