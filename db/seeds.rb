@@ -26,8 +26,8 @@ Team.create(name: 'Team Two')
 User.create(first_name: 'John', last_name: 'Doe', email: 'john@doe.com', password: 'password', team_id: 1)
 User.create(first_name: 'Jake', last_name: 'Molly', email: 'molly@doe.com', password: 'password', team_id: 1)
 User.create(first_name: 'Archer', last_name: 'Bellmont', email: 'hanky@doe.com', password: 'password', team_id: 1)
-User.create(first_name: 'Archer', last_name: 'Bellmont', email: 'pinky@doe.com', password: 'password', team_id: 2)
-User.create(first_name: 'Archer', last_name: 'Bellmont', email: 'tommy@doe.com', password: 'password', team_id: 3)
+User.create(first_name: 'Brandon', last_name: 'Potts', email: 'pinky@doe.com', password: 'password', team_id: 2)
+User.create(first_name: 'Dena', last_name: 'Burd', email: 'tommy@doe.com', password: 'password', team_id: 3)
 
 # Default Projects
 Project.create(title: 'This is a random title for a project', content: content, date_published: Time.now, teams_id: 2)
